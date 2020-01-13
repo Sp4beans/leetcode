@@ -23,7 +23,7 @@ package com.sp4beans.leetcode.easy;
 //
 //        1 <= n <= 100
 
-public class P5173 {
+public class P1175 {
 
     private static class Solution {
 

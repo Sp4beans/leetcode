@@ -35,7 +35,7 @@ package com.sp4beans.leetcode.easy;
 //        s[i] 只包含数字（'0'-'9'）和 '#' 字符。
 //        s 是映射始终存在的有效字符串。
 
-public class P5303 {
+public class P1309 {
 
     private static class Solution {
         public String freqAlphabets(String s) {

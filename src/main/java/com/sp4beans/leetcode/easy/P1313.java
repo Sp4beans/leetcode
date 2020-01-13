@@ -20,7 +20,7 @@ package com.sp4beans.leetcode.easy;
 //        nums.length % 2 == 0
 //        1 <= nums[i] <= 100
 
-public class P5143 {
+public class P1313 {
     private class Solution {
         public int[] decompressRLElist(int[] nums) {
             int length = 0;

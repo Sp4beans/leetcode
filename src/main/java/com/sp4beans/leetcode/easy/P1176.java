@@ -38,7 +38,7 @@ package com.sp4beans.leetcode.easy;
 //        0 <= calories[i] <= 20000
 //        0 <= lower <= upper
 
-public class P5174 {
+public class P1176 {
 
     private static class Solution {
         public int dietPlanPerformance(int[] calories, int k, int lower, int upper) {
