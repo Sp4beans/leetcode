@@ -38,12 +38,12 @@ public class P1331 {
         public int[] arrayRankTransform(int[] arr) {
             int length = arr.length;
             int[] ans = new int[length];
-            int[] nums = new int[length];
+            Integer[] nums = new Integer[length];
             for (int i = 0; i < length; i++) {
                 nums[i] = i;
             }
 
-            Arrays.sort(nums, (a, b) -> {return Integer.compare(arr[a], arr[b]);});
+            Arrays.sort(nums, (a, b) -> Integer.compare(arr[a], arr[b]));
             int index = 1;
             for (int i = 0; i < length; i++) {
                 int cur = nums[i];
