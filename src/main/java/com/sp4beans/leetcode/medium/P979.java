@@ -57,7 +57,7 @@ public class P979 {
         public int distributeCoins(TreeNode root) {
             ans = 0;
             dist(root);
-            return ans
+            return ans;
         }
 
         public int dist(TreeNode root) {
