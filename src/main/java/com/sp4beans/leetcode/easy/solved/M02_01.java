@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.easy;
+package com.sp4beans.leetcode.easy.solved;
 
 //        编写代码，移除未排序链表中的重复节点。保留最开始出现的节点。
 //
