@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.easy;
+package com.sp4beans.leetcode.easy.solved;
 
 //        珠玑妙算游戏（the game of master mind）的玩法如下。
 //

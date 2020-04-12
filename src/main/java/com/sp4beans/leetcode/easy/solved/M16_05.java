@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.easy;
+package com.sp4beans.leetcode.easy.solved;
 
 //        设计一个算法，算出 n 阶乘有多少个尾随零。
 //
