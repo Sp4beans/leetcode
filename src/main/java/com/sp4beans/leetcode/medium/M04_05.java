@@ -32,9 +32,27 @@ public class M04_05 {
     }
 
     private class Solution {
+        TreeNode last = null;
+        boolean isBST = true;
+
         public boolean isValidBST(TreeNode root) {
-            // TODO
-            return false;
+            helper(root);
+            return isBST;
+        }
+
+        private void helper(TreeNode root) {
+            if (root == null || !isBST) {
+                return;
+            }
+            helper(root.left);
+
+            if (last != null && last.val >= root.val) {
+                isBST = false;
+            }
+            last = root;
+
+            helper(root.right);
         }
     }
+
 }
