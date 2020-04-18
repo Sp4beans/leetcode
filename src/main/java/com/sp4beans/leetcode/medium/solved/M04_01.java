@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        节点间通路。给定有向图，设计一个算法，找出两个节点之间是否存在一条路径。
 //
