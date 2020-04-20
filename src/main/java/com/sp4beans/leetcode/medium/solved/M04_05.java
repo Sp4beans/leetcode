@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        实现一个函数，检查一棵二叉树是否为二叉搜索树。
 //

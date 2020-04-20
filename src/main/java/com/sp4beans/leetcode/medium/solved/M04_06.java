@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        设计一个算法，找出二叉搜索树中指定节点的“下一个”节点（也即中序后继）。
 //

@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.match;
+package com.sp4beans.leetcode.easy.solved;
 
 //        小朋友 A 在和 ta 的小伙伴们玩传信息游戏，游戏规则如下：
 //
@@ -29,7 +29,7 @@ package com.sp4beans.leetcode.match;
 //        1 <= k <= 5
 //        1 <= relation.length <= 90, 且 relation[i].length == 2
 //        0 <= relation[i][0],relation[i][1] < n 且 relation[i][0] != relation[i][1]
-public class T2 {
+public class PLCP7 {
 
     private class Solution {
         public int numWays(int n, int[][] relation, int k) {

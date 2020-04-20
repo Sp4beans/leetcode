@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.match;
+package com.sp4beans.leetcode.medium.solved;
 
 import java.util.Arrays;
 
@@ -46,7 +46,7 @@ import java.util.Arrays;
 //        1 <= requirements.length <= 100000
 //        0 <= increase[i] <= 10
 //        0 <= requirements[i] <= 100000
-public class T3 {
+public class PLCP8 {
     private class Solution {
         public int[] getTriggerTime(int[][] increase, int[][] requirements) {
             int[] c = new int[100001];

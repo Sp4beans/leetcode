@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 /**
  * @author wangjixin <wangjixin@kuaishou.com>
