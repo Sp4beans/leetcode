@@ -38,8 +38,7 @@ package com.sp4beans.leetcode.easy;
 //        1 <= s.length <= 500
 //        s 仅由小写英文字母和/或数字组成。
 
-// TODO change number
-public class P5388 {
+public class P1417 {
     private class Solution {
         public String reformat(String s) {
             String alpha = "";

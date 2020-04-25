@@ -36,8 +36,7 @@ package com.sp4beans.leetcode.easy;
 //        1 <= nums.length <= 100
 //        -100 <= nums[i] <= 100
 
-// TODO change number
-public class P5372 {
+public class P1413 {
     private class Solution {
         public int minStartValue(int[] nums) {
             int min = Integer.MAX_VALUE;

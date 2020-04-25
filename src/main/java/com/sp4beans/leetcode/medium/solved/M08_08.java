@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        有重复字符串的排列组合。编写一种方法，计算某字符串的所有排列组合。
 //
