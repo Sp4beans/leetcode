@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        编写一个函数，不用临时变量，直接交换numbers = [a, b]中a与b的值。
 //
