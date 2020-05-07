@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //         n 名士兵站成一排。每个士兵都有一个 独一无二 的评分 rating 。
 //
