@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        设计和构建一个“最近最少使用”缓存，该缓存会删除最近最少使用的项目。缓存应该从键映射到值(允许你插入和检索特定键对应的值)，并在初始化时指定最大容量。当缓存被填满时，它应该删除最近最少使用的项目。
 //
@@ -21,19 +21,52 @@ package com.sp4beans.leetcode.medium;
 //        cache.get(3);       // 返回  3
 //        cache.get(4);       // 返回  4
 
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+
 public class P16_25 {
     private class LRUCache {
 
-        public LRUCache(int capacity) {
+        Map<Integer, Integer> map;
+        LinkedList<Integer> lru;
+        int cap;
+        int cur;
 
+        public LRUCache(int capacity) {
+            this.map = new HashMap<>();
+            this.lru = new LinkedList<>();
+            this.cap = capacity;
+            this.cur = 0;
         }
 
         public int get(int key) {
-
+            if (map.containsKey(key)) {
+                lru.removeFirstOccurrence(key);
+                lru.addLast(key);
+                return map.get(key);
+            }
+            return -1;
         }
 
         public void put(int key, int value) {
-
+            if (!map.containsKey(key)) {
+                if (cur < cap) {
+                    map.put(key, value);
+                    lru.addLast(key);
+                    cur++;
+                } else {
+                    int k = lru.pop();
+                    map.remove(k);
+                    map.put(key, value);
+                    lru.removeFirstOccurrence(key);
+                    lru.addLast(key);
+                }
+            } else {
+                map.put(key, value);
+                lru.removeFirstOccurrence(key);
+                lru.addLast(key);
+            }
         }
     }
 

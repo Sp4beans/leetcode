@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.easy;
+package com.sp4beans.leetcode.easy.solved;
 
 //        给你一个整数数组 nums 。你可以选定任意的 正数 startValue 作为初始值。
 //

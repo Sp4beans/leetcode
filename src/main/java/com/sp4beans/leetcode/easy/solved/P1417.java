@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.easy;
+package com.sp4beans.leetcode.easy.solved;
 
 //        给你一个混合了数字和字母的字符串 s，其中的字母均为小写英文字母。
 //
