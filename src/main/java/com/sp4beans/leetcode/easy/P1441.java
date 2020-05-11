@@ -45,5 +45,31 @@ package com.sp4beans.leetcode.easy;
 //        1 <= n <= 100
 //        target 是严格递增的
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class P1441 {
+    private static class Solution {
+        public List<String> buildArray(int[] target, int n) {
+            int idx = 0;
+            int exp = 1;
+            List<String> result = new ArrayList<>();
+            while(exp <= n && idx < target.length) {
+                if (target[idx] == exp) {
+                    result.add("Push");
+                    idx++;
+                } else {
+                    result.add("Push");
+                    result.add("Pop");
+                }
+                exp++;
+            }
+            return result;
+        }
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        solution.buildArray(new int[]{2,3,4}, 4).forEach(System.out::println);
+    }
 }
