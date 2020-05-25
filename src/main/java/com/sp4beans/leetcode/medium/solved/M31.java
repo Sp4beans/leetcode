@@ -1,6 +1,6 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
-//        给定 pushed 和 popped 两个序列，每个序列中的 值都不重复，只有当它们可能是在最初空栈上进行的推入 push 和弹出 pop 操作序列的结果时，返回 true；否则，返回 false 。
+//        输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出顺序。假设压入栈的所有数字均不相等。例如，序列 {1,2,3,4,5} 是某栈的压栈序列，序列 {4,5,3,2,1} 是该压栈序列对应的一个弹出序列，但 {4,3,5,1,2} 就不可能是该压栈序列的弹出序列。
 //
 //         
 //
@@ -23,10 +23,11 @@ package com.sp4beans.leetcode.medium;
 //        0 <= pushed.length == popped.length <= 1000
 //        0 <= pushed[i], popped[i] < 1000
 //        pushed 是 popped 的排列。
+//        注意：本题与主站 946 题相同：https://leetcode-cn.com/problems/validate-stack-sequences/
 
 import java.util.Stack;
 
-public class P946 {
+public class M31 {
     private class Solution {
         public boolean validateStackSequences(int[] pushed, int[] popped) {
             Stack<Integer> stack = new Stack();
