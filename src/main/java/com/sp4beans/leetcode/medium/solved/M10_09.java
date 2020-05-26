@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        给定M×N矩阵，每一行、每一列都按升序排列，请编写代码找出某元素。
 //
