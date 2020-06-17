@@ -49,7 +49,6 @@ public class P654 {
 
     private class Solution {
         public TreeNode constructMaximumBinaryTree(int[] nums) {
-
             return gen(nums, 0, nums.length - 1);
         }
 
@@ -59,20 +58,20 @@ public class P654 {
             }
             if (start == end) {
                 return new TreeNode(nums[start]);
-            } else {
-                int val = nums[start];
-                int idx = start;
-                for (int i = start + 1; i <= end; i++) {
-                    if (nums[i] > val) {
-                        val = nums[i];
-                        idx = i;
-                    }
-                }
-                TreeNode ans = new TreeNode(nums[idx]);
-                ans.left = gen(nums, start, idx - 1);
-                ans.right = gen(nums, idx + 1, end);
-                return ans;
             }
+            int max = Integer.MIN_VALUE;
+            int index = 0;
+            for (int i = start; i <= end; i++) {
+                if (max < nums[i]) {
+                    index = i;
+                    max = nums[i];
+                }
+            }
+
+            TreeNode result = new TreeNode(max);
+            result.left = gen(nums, start, index - 1);
+            result.right = gen(nums, index + 1, end);
+            return result;
         }
     }
 }
