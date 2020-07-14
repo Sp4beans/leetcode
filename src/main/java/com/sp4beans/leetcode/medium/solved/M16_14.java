@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        给定一个二维平面及平面上的 N 个点列表Points，其中第i个点的坐标为Points[i]=[Xi,Yi]。请找出一条直线，其通过的点的数目最多。
 //

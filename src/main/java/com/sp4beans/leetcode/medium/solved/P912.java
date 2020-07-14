@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        给你一个整数数组 nums，请你将该数组升序排列。
 //

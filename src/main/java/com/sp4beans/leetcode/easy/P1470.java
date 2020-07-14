@@ -28,7 +28,7 @@ package com.sp4beans.leetcode.easy;
 //        1 <= nums[i] <= 10^3
 
 // TODO change number
-public class P5428 {
+public class P1470 {
     private class Solution {
         public int[] shuffle(int[] nums, int n) {
             int[] ans = new int[2 * n];
