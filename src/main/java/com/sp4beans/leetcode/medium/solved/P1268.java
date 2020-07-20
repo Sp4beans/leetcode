@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 //
 //        给你一个产品数组 products 和一个字符串 searchWord ，products  数组中每个产品都是一个字符串。
 //

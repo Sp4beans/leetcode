@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        给一非空的单词列表，返回前 k 个出现次数最多的单词。
 //

@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        给出一个二维数组 A，每个单元格为 0（代表海）或 1（代表陆地）。
 //
