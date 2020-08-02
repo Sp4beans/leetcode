@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        给定正整数 K，你需要找出可以被 K 整除的、仅包含数字 1 的最小正整数 N。
 //

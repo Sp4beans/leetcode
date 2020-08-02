@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        给定一个整数 n, 返回从 1 到 n 的字典顺序。
 //

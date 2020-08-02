@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        给定一个可能包含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。
 //

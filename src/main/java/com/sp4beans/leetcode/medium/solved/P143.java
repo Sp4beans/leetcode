@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        给定一个单链表 L：L0→L1→…→Ln-1→Ln ，
 //        将其重新排列后变为： L0→Ln→L1→Ln-1→L2→Ln-2→…

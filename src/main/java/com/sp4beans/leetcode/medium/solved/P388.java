@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.medium;
+package com.sp4beans.leetcode.medium.solved;
 
 //        假设我们以下述方式将我们的文件系统抽象成一个字符串:
 //
