@@ -25,7 +25,7 @@ package com.sp4beans.leetcode.easy;
 //        1 <= k <= 1000
 //        对于所有 1 <= i < j <= arr.length 的 i 和 j 满足 arr[i] < arr[j] 
 
-public class P5468 {
+public class P1539 {
     private static class Solution {
         public int findKthPositive(int[] arr, int k) {
             int base = 1;

@@ -32,8 +32,7 @@ package com.sp4beans.leetcode.easy;
 //        0 <= arr[i] <= 1000
 //        0 <= a, b, c <= 1000
 
-// TODO change number
-public class P5475 {
+public class P1534 {
     private class Solution {
         public int countGoodTriplets(int[] arr, int a, int b, int c) {
             int length = arr.length;

@@ -39,7 +39,7 @@ package com.sp4beans.leetcode.easy;
 
 import java.util.LinkedList;
 
-public class P5483 {
+public class P1544 {
     private class Solution {
         public String makeGood(String s) {
             LinkedList<Character> queue = new LinkedList<>();

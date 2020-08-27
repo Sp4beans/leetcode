@@ -27,7 +27,7 @@ package com.sp4beans.leetcode.easy;
 
 import java.util.Arrays;
 
-public class P5452 {
+public class P1502 {
     private class Solution {
         public boolean canMakeArithmeticProgression(int[] arr) {
             Arrays.sort(arr);
