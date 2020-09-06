@@ -88,6 +88,7 @@ public class CustomStringJavaCompiler {
             try {
                 main.invoke(aClass.newInstance(), runResult);
             } catch (Exception e) {
+
             } finally {
                 finished = true;
             }
