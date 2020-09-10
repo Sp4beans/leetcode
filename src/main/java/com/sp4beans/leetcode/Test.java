@@ -8,9 +8,6 @@ public class Test {
 
     public static void main(String[] args) throws Exception {
 
-        System.setSecurityManager(new TempTaskSecurityManager());
-        runMethod();
-
         runMethod();
     }
 
@@ -27,7 +24,6 @@ public class Test {
                 + "        while (i++ < 1000) {\n"
                 + "            String data = \"\" + i;\n"
                 + "            out.append(data);\n"
-                + "            System.exit(0);\n"
                 + "        }\n"
                 + "    }\n"
                 + "}";

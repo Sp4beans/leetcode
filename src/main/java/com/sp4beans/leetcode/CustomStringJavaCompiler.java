@@ -73,6 +73,17 @@ public class CustomStringJavaCompiler {
         return task.call();
     }
 
+    public Class<?> getClazz() throws Exception {
+        StringClassLoader scl = new StringClassLoader();
+        return scl.findClass(fullClassName);
+    }
+
+    public boolean judge() throws Exception {
+        StringClassLoader scl = new StringClassLoader();
+        Class clazz = scl.findClass(fullClassName);
+        return clazz == clazz;
+    }
+
     /**
      * 执行main方法，重定向System.out.print
      */
@@ -225,15 +236,8 @@ public class CustomStringJavaCompiler {
         @Override
         protected Class<?> findClass(String name) throws ClassNotFoundException {
             ByteJavaFileObject fileObject = javaFileObjectMap.get(name);
-            if (fileObject != null) {
-                byte[] bytes = fileObject.getCompiledBytes();
-                return defineClass(name, bytes, 0, bytes.length);
-            }
-            try {
-                return ClassLoader.getSystemClassLoader().loadClass(name);
-            } catch (Exception e) {
-                return super.findClass(name);
-            }
+            byte[] bytes = fileObject.getCompiledBytes();
+            return super.defineClass(name, bytes, 0, bytes.length);
         }
     }
 }
