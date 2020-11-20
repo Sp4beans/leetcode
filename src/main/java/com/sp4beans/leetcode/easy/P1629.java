@@ -49,8 +49,25 @@ package com.sp4beans.leetcode.easy;
 public class P1629 {
     private class Solution {
         public char slowestKey(int[] releaseTimes, String keysPressed) {
-            // TODO
-            return 'c';
+            long[] count = new long[27];
+            long maxCount = 0;
+            char[] cs = keysPressed.toCharArray();
+            for (int i = 0; i < cs.length; i++) {
+                long newCnt = 0;
+                if (i == 0) {
+                    newCnt = releaseTimes[i];
+                } else {
+                    newCnt = releaseTimes[i] - releaseTimes[i - 1];
+                }
+                count[cs[i] - 'a'] = Math.max(count[cs[i] - 'a'], newCnt);
+                maxCount = Math.max(maxCount, count[cs[i] - 'a']);
+            }
+            for (char c = 'z'; c >= 'a'; c--) {
+                if (count[c-'a'] == maxCount) {
+                    return c;
+                }
+            }
+            return 'a';
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.easy;
+package com.sp4beans.leetcode.easy.solved;
 
 //        给你一个大小为 rows x cols 的矩阵 mat，其中 mat[i][j] 是 0 或 1，请返回 矩阵 mat 中特殊位置的数目 。
 //

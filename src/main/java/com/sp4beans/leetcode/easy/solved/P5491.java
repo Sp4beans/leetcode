@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.easy;
+package com.sp4beans.leetcode.easy.solved;
 
 //        给你一个正方形矩阵 mat，请你返回矩阵对角线元素的和。
 //

@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.easy;
+package com.sp4beans.leetcode.easy.solved;
 
 //        给你一个整数数组 arr ，请你删除最小 5% 的数字和最大 5% 的数字后，剩余数字的平均值。
 //

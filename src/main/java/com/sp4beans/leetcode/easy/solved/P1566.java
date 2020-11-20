@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.easy;
+package com.sp4beans.leetcode.easy.solved;
 
 //        给你一个正整数数组 arr，请你找出一个长度为 m 且在数组中至少重复 k 次的模式。
 //

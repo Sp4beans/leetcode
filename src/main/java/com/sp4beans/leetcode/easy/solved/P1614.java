@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.easy;
+package com.sp4beans.leetcode.easy.solved;
 
 //        如果字符串满足一下条件之一，则可以称之为 有效括号字符串（valid parentheses string，可以简写为 VPS）：
 //

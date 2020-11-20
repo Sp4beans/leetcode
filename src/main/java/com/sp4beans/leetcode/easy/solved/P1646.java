@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.easy;
+package com.sp4beans.leetcode.easy.solved;
 
 //        给你一个整数 n 。按下述规则生成一个长度为 n + 1 的数组 nums ：
 //
