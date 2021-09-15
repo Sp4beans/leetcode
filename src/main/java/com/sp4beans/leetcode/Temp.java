@@ -1,7 +1,7 @@
 package com.sp4beans.leetcode;
 
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @author wangjixin <wangjixin@kuaishou.com>
@@ -10,38 +10,19 @@ import java.io.PipedOutputStream;
 public class Temp {
 
     public static void main(String[] args) throws Exception {
-        PipedOutputStream out = new PipedOutputStream();
-        PipedInputStream input = new PipedInputStream();
+        test3();
+    }
 
-        input.connect(out);
-        new Thread(() -> {
-            try {
-                System.out.println("write:");
-                for(int i = 0; i < 20; i++) {
-                    String outData = "" + ( i + 1 );
-                    Thread.sleep(1000);
-                    out.write(outData.getBytes());
-                }
-                out.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }).start();
+    public static void test3() throws Exception {
 
-        new Thread(() -> {
-            try {
-                System.out.println("read:");
-                byte[] byteArray = new byte[8];
-                int readLength;
-                while(-1 != (readLength = input.read(byteArray))) {
-                    String newData = new String(byteArray, 0, readLength);
-                    System.out.print(newData);
-                }
-                input.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }).start();
+        Pattern p = Pattern.compile("(liveStreamId|live_streamid)=(.*?)(&|$)");
+
+        String line = "live_streamid=EMuZPapg55o";
+        Matcher m = p.matcher(line);
+        while (m.find()) {
+            String trigger = m.group(2);
+            System.out.println(trigger);
+        }
     }
 
 }

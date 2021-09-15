@@ -20,6 +20,47 @@ package com.sp4beans.leetcode.easy.solved;
 //
 //        1 <= target <= 10^5
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class M57II {
-    // TODO
+    private class Solution {
+        public int[][] findContinuousSequence(int target) {
+            int length = target / 2 + 1;
+            int[] ttmap = new int[length + 1];
+            for (int i = 1; i <= length; i++) {
+                ttmap[i] = i + ttmap[i-1];
+            }
+
+            List<Integer[]> ans = new ArrayList();
+            int min = 1;
+            int max = 1;
+            while (min <= max && max <= target / 2 + 1) {
+                int curAns = ttmap[max] - ttmap[min - 1];
+                if (curAns < target) {
+                    max++;
+                } else if (curAns > target) {
+                    min++;
+                } else {
+                    Integer[] aans = new Integer[max - min + 1];
+                    for (int i = min; i <= max; i++) {
+                        aans[i - min] = i;
+                    }
+                    ans.add(aans);
+                    max++;
+                    min++;
+                }
+            }
+            int[][] newAns = new int[ans.size()][];
+            int index = 0;
+            for (Integer[] arr : ans) {
+                int[] tmp = new int[arr.length];
+                for (int i = 0; i < arr.length; i++) {
+                    tmp[i] = arr[i];
+                }
+                newAns[index++] = tmp;
+            }
+            return newAns;
+        }
+    }
 }

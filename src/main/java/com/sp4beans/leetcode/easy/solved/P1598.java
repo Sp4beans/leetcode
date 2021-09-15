@@ -1,4 +1,4 @@
-package com.sp4beans.leetcode.easy;
+package com.sp4beans.leetcode.easy.solved;
 
 //        每当用户执行变更文件夹操作时，LeetCode 文件系统都会保存一条日志记录。
 //
